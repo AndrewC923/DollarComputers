@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace DollarComputers
 {
-    static class Program
+    public static class Program
     {
+        public static Dictionary<string, Form> forms;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,16 @@ namespace DollarComputers
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            forms = new Dictionary<string, Form>();
+            forms.Add("SplashScreen", new SplashScreen());
+            forms.Add("StartForm", new StartForm());
+            forms.Add("SelectForm", new SelectForm());
+            forms.Add("ProductInfo", new ProductInfo());
+            forms.Add("OrderForm", new OrderForm());
+            
+
+            Application.Run(forms["SplashScreen"]);
         }
     }
 }

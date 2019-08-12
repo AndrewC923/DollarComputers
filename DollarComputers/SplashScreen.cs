@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace DollarComputers
 {
-    public partial class Form1 : Form
+    public partial class SplashScreen : Form
     {
-        public Form1()
+        public SplashScreen()
         {
             InitializeComponent();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+        private void SplashScreenTimer_Tick(object sender, EventArgs e)
         {
-
+            SplashScreenTimer.Enabled = false;
+            Program.forms["StartForm"].Show();
+            this.Hide();
         }
     }
 }

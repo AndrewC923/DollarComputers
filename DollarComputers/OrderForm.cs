@@ -16,5 +16,16 @@ namespace DollarComputers
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Program.forms["ProductInfo"].Show();
+            this.Hide();
+        }
+
+        private void OrderForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

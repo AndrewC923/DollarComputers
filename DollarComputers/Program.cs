@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DollarComputers.Data;
 namespace DollarComputers
 {
     public static class Program
     {
+        public static Product product;
         public static Dictionary<string, Form> forms;
         /// <summary>
         /// The main entry point for the application.
@@ -26,6 +27,7 @@ namespace DollarComputers
             forms.Add("OrderForm", new OrderForm());
             forms.Add("AboutForm", new AboutForm());
 
+            product = new Product();
             Application.Run(forms["SplashScreen"]);
         }
     }

@@ -50,7 +50,7 @@
             // 
             this.YourSelectionLabel.AutoSize = true;
             this.YourSelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YourSelectionLabel.Location = new System.Drawing.Point(28, 398);
+            this.YourSelectionLabel.Location = new System.Drawing.Point(16, 489);
             this.YourSelectionLabel.Name = "YourSelectionLabel";
             this.YourSelectionLabel.Size = new System.Drawing.Size(127, 20);
             this.YourSelectionLabel.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // YourSelectionTextBox
             // 
-            this.YourSelectionTextBox.Location = new System.Drawing.Point(181, 391);
+            this.YourSelectionTextBox.Location = new System.Drawing.Point(169, 482);
             this.YourSelectionTextBox.Name = "YourSelectionTextBox";
             this.YourSelectionTextBox.Size = new System.Drawing.Size(354, 26);
             this.YourSelectionTextBox.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(571, 378);
+            this.CancelButton.Location = new System.Drawing.Point(559, 469);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 39);
             this.CancelButton.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(684, 378);
+            this.NextButton.Location = new System.Drawing.Point(672, 469);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 39);
             this.NextButton.TabIndex = 4;
@@ -88,13 +88,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.YourSelectionTextBox);
             this.Controls.Add(this.YourSelectionLabel);
             this.Controls.Add(this.DollarComputerHardListLabel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectForm";

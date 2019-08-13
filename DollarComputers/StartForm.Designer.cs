@@ -38,7 +38,7 @@
             // 
             // startNewOrderBtn
             // 
-            this.startNewOrderBtn.Location = new System.Drawing.Point(49, 78);
+            this.startNewOrderBtn.Location = new System.Drawing.Point(65, 128);
             this.startNewOrderBtn.Name = "startNewOrderBtn";
             this.startNewOrderBtn.Size = new System.Drawing.Size(184, 51);
             this.startNewOrderBtn.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // loadSavedOrderBtn
             // 
-            this.loadSavedOrderBtn.Location = new System.Drawing.Point(49, 194);
+            this.loadSavedOrderBtn.Location = new System.Drawing.Point(65, 244);
             this.loadSavedOrderBtn.Name = "loadSavedOrderBtn";
             this.loadSavedOrderBtn.Size = new System.Drawing.Size(184, 51);
             this.loadSavedOrderBtn.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(49, 314);
+            this.exitBtn.Location = new System.Drawing.Point(65, 364);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(184, 51);
             this.exitBtn.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.pictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.BackgroundImage")));
             this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox.Location = new System.Drawing.Point(287, 64);
+            this.pictureBox.Location = new System.Drawing.Point(303, 114);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(375, 325);
             this.pictureBox.TabIndex = 3;
@@ -79,12 +79,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 450);
+            this.ClientSize = new System.Drawing.Size(778, 544);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.loadSavedOrderBtn);
             this.Controls.Add(this.startNewOrderBtn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";

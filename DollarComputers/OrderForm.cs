@@ -27,5 +27,14 @@ namespace DollarComputers
         {
             Application.Exit();
         }
+        /// <summary>
+        /// This is the event handler for the AboutToolStripMenuItem_Click event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.forms["AboutForm"].ShowDialog();
+        }
     }
 }

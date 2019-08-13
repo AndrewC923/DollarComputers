@@ -67,11 +67,13 @@
             this.CancelButton = new System.Windows.Forms.Button();
             this.ConfirmSelectionLabel = new System.Windows.Forms.Label();
             this.SelectAnotherProductButton = new System.Windows.Forms.Button();
+            this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,7 +84,6 @@
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProductInfoMenuStrip = new System.Windows.Forms.MenuStrip();
             this.ProductInfoMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -401,13 +402,26 @@
             this.SelectAnotherProductButton.Text = "Select Another Product";
             this.SelectAnotherProductButton.UseVisualStyleBackColor = true;
             // 
+            // ProductInfoMenuStrip
+            // 
+            this.ProductInfoMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ProductInfoMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem});
+            this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
+            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(778, 33);
+            this.ProductInfoMenuStrip.TabIndex = 38;
+            this.ProductInfoMenuStrip.Text = "menuStrip1";
+            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
             this.toolStripSeparator,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
             this.toolStripSeparator1,
-            this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
@@ -427,21 +441,31 @@
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(267, 6);
             // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveAsToolStripMenuItem.Text = "Save &As";
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(267, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -514,18 +538,6 @@
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
             this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.selectAllToolStripMenuItem.Text = "Select &All";
-            // 
-            // ProductInfoMenuStrip
-            // 
-            this.ProductInfoMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.ProductInfoMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
-            this.ProductInfoMenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.ProductInfoMenuStrip.Name = "ProductInfoMenuStrip";
-            this.ProductInfoMenuStrip.Size = new System.Drawing.Size(778, 33);
-            this.ProductInfoMenuStrip.TabIndex = 38;
-            this.ProductInfoMenuStrip.Text = "menuStrip1";
             // 
             // ProductInfo
             // 
@@ -625,11 +637,13 @@
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Label ConfirmSelectionLabel;
         private System.Windows.Forms.Button SelectAnotherProductButton;
+        private System.Windows.Forms.MenuStrip ProductInfoMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
@@ -640,6 +654,5 @@
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip ProductInfoMenuStrip;
     }
 }

@@ -24,7 +24,7 @@ namespace DollarComputers
             forms.Add("SelectForm", new SelectForm());
             forms.Add("ProductInfo", new ProductInfo());
             forms.Add("OrderForm", new OrderForm());
-            
+            forms.Add("AboutForm", new AboutForm());
 
             Application.Run(forms["SplashScreen"]);
         }

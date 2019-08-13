@@ -33,5 +33,10 @@ namespace DollarComputers
         {
             Application.Exit();
         }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

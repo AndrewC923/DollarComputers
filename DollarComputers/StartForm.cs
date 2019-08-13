@@ -27,7 +27,11 @@ namespace DollarComputers
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// This is the event handler for the ExitBtn_Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StartForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
